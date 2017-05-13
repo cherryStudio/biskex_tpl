@@ -8728,7 +8728,7 @@ function wpurp_custom_template( $content, $recipe )
 
 		return $output;
 }
-add_filter( 'wpurp_output_recipe', 'wpurp_custom_template', 10, 2 );
+// add_filter( 'wpurp_output_recipe', 'wpurp_custom_template', 10, 2 );
 
 /**
  * Added body class to make it possible to identify the Divi theme on frontend
