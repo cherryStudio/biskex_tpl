@@ -119,3 +119,8 @@ span.et_close_search_field,
 #et-secondary-menu { float: left; }
 
 #et-info { float: right; }
+
+
+#buddypress #item-header-cover-image #item-header-avatar {
+    float: right;
+}

@@ -15,46 +15,6 @@ do_action( 'bp_before_group_header' );
 
 ?>
 
-<div id="item-actions">
-
-	<?php if ( bp_group_is_visible() ) : ?>
-
-		<h2><?php _e( 'Group Admins', 'buddypress' ); ?></h2>
-
-		<?php bp_group_list_admins();
-
-		/**
-		 * Fires after the display of the group's administrators.
-		 *
-		 * @since 1.1.0
-		 */
-		do_action( 'bp_after_group_menu_admins' );
-
-		if ( bp_group_has_moderators() ) :
-
-			/**
-			 * Fires before the display of the group's moderators, if there are any.
-			 *
-			 * @since 1.1.0
-			 */
-			do_action( 'bp_before_group_menu_mods' ); ?>
-
-			<h2><?php _e( 'Group Mods' , 'buddypress' ); ?></h2>
-
-			<?php bp_group_list_mods();
-
-			/**
-			 * Fires after the display of the group's moderators, if there are any.
-			 *
-			 * @since 1.1.0
-			 */
-			do_action( 'bp_after_group_menu_mods' );
-
-		endif;
-
-	endif; ?>
-
-</div><!-- #item-actions -->
 
 <?php if ( ! bp_disable_group_avatar_uploads() ) : ?>
 	<div id="item-header-avatar">
